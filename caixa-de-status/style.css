@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
+
+:root {
+  --blue-color: rgb(55, 84, 252);
+  --darkblue-color: rgb(43, 69, 214);
+}
+
+body {
+  background-color: rgb(55, 84, 252);
+  font-family: 'Epilogue', sans-serif;
+}
+
+
+.status-box {
+  background-color: white;
+  width: 700px;
+  margin: 15% auto;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.status-box header {
+  display: flex;
+
+}
+
+.status-box header picture {
+  margin-right: 25px;
+}
+
+.status-box header picture img{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.status-box .header-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status-box .header-right .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.status-box .header-right .user h2 {
+  color: rgb(32, 32, 32);
+  font-size: 30px;
+  margin: 0;
+}
+
+.status-box .header-right .btn-close span{
+  color: rgb(32, 32, 32);
+}
+
+.status-box .user select {
+  appearance: none;
+  background: url(img/sort-down.png) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+  background-size: 13px;
+  background-position: left 90px bottom 6px;  /*Posição da imagem do background*/
+  width: 110px;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  color: rgb(32, 32, 32);
+}
+
+.status-box .header-right div span {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.text-box textarea{
+  margin-top: 40px;
+  width: 100%;
+  height: 65px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-size: 25px;
+  resize: none;
+  color: gray;
+}
+
+.status-box footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-box footer ul {
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.status-box footer ul li {
+  cursor: pointer;
+  color: gray;
+}
+
+.status-box footer ul li:hover {
+  color: blue;
+}
+
+.status-box footer div button {
+  cursor: pointer;
+  background-color: var(--darkblue-color);
+  width: 130px;
+  height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+}
+
+.status-box footer div button:hover {
+  background: linear-gradient(var(--darkblue-color), rgb(56, 56, 187));
+}
